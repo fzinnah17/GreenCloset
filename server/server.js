@@ -2,8 +2,6 @@ import express from 'express';
 import path from 'path';
 import favicon from 'serve-favicon';
 import dotenv from 'dotenv';
-// import eventsRoutes from './routes/eventsRoutes.js';
-// import locationsRoutes from './routes/locationsRoutes.js';
 
 dotenv.config();
 
