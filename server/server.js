@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import favicon from 'serve-favicon';
 import dotenv from 'dotenv';
+import productRoutes from "./routes/productRoutes.js"
 
 dotenv.config();
 
@@ -12,7 +13,7 @@ const app = express();
 app.use(express.json());
 
 // // API routes
-// app.use('/api/products', productsPage);
+app.use(productRoutes);
 
 if (process.env.NODE_ENV === 'development') {
     app.use(favicon(path.resolve('../', 'client', 'public', 'party.png')));
