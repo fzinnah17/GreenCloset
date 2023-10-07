@@ -21,8 +21,14 @@ export const getProductsForPage = async (req, res) => {
 
 export const getProductByID = async (req, res) => {
   try {
-    await delay(1000)
-    const itemToServe = products.map(item => { item.id == req.params.itemId})
+    await delay(500)
+    console.log(req.params.id)
+    let itemId = req.params.id
+    const itemToServe = products.find(item => { 
+      if (item.id == itemId){
+        return item
+      }
+    })
     res.status(200).json(itemToServe)
   } catch (error) {
     res.status(500).json({message: "Could not fetch item"})

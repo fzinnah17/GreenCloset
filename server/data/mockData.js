@@ -1,32 +1,18 @@
 export const products = [
     {
       id: 1,
-<<<<<<< HEAD
-      name: 'Product 1',
-      description: 'This is product 1',
-      tags: ['tag1', 'tag2'],
-      userId: 1001,
-=======
       name: 'Warm Winter Coat',
       description: 'Stay cozy and stylish this winter with our warm winter coat.',
       tags: ['coats', 'winter'],
       userid: 1001,
->>>>>>> 61f07f4f1b1d6602c11127057975358f33280504
       image: 'image1-url'
     },
     {
       id: 2,
-<<<<<<< HEAD
-      name: 'Product 2',
-      description: 'This is product 2',
-      tags: ['tag3', 'tag4'],
-      userId: 1002,
-=======
       name: 'Elegant Blouse',
       description: 'A perfect choice for formal occasions, this elegant blouse is a must-have.',
       tags: ['blouses', 'formal'],
       userid: 1002,
->>>>>>> 61f07f4f1b1d6602c11127057975358f33280504
       image: 'image2-url'
     },
     {
