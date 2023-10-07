@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import favicon from 'serve-favicon';
 import dotenv from 'dotenv';
-import Item from './data'
+import getProductByID from './controllers/productController.js'
 // import eventsRoutes from './routes/eventsRoutes.js';
 // import locationsRoutes from './routes/locationsRoutes.js';
 
@@ -15,7 +15,8 @@ const app = express();
 app.use(express.json());
 
 // // API routes
-// app.use('/api/products', productsPage);
+// app.use('/api/events', eventsRoutes);
+// app.use('/api/locations', locationsRoutes);
 
 if (process.env.NODE_ENV === 'development') {
     app.use(favicon(path.resolve('../', 'client', 'public', 'party.png')));
@@ -30,23 +31,7 @@ if (process.env.NODE_ENV === 'production') {
     );
 }
 
-
-app.get('/:id', async(req,res)=> {
-    try{
-
-    }catch{
-
-    }
-})
-
-//   try{
-//     let session = await Session.findOne({where: {id: req.params.id}})
-//     return res.json(session)
-// } catch(err){
-//     console.log(err)
-//     return res.json(err)
-// }
-
+app.get('/products/:itemId', getProductByID)
 
 app.listen(PORT, () => {
     console.log(`server listening on http://localhost:${PORT}`);

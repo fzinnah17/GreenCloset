@@ -4,7 +4,7 @@ export const products = [
       name: 'Product 1',
       description: 'This is product 1',
       tags: ['tag1', 'tag2'],
-      userid: 1001,
+      userId: 1001,
       image: 'image1-url'
     },
     {
@@ -12,7 +12,7 @@ export const products = [
       name: 'Product 2',
       description: 'This is product 2',
       tags: ['tag3', 'tag4'],
-      userid: 1002,
+      userId: 1002,
       image: 'image2-url'
     },
   ];

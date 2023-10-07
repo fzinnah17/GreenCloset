@@ -18,3 +18,13 @@ export const getProductsForPage = async (req, res) => {
     res.status(500).json({ message: "Something went wrong!" });
   }
 };
+
+export const getProductByID = async (req, res) => {
+  try {
+    await delay(1000)
+    const itemToServe = products.map(item => { item.id == req.params.itemId})
+    res.status(200).json(itemToServe)
+  } catch (error) {
+    res.status(500).json({message: "Could not fetch item"})
+  }
+}
