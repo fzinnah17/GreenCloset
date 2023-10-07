@@ -14,8 +14,7 @@ const app = express();
 app.use(express.json());
 
 // // API routes
-// app.use('/api/events', eventsRoutes);
-// app.use('/api/locations', locationsRoutes);
+// app.use('/api/products', productsPage);
 
 if (process.env.NODE_ENV === 'development') {
     app.use(favicon(path.resolve('../', 'client', 'public', 'party.png')));
