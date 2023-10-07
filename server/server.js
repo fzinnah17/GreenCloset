@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import favicon from 'serve-favicon';
 import dotenv from 'dotenv';
+import Item from './data'
 // import eventsRoutes from './routes/eventsRoutes.js';
 // import locationsRoutes from './routes/locationsRoutes.js';
 
@@ -29,6 +30,23 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve('..', 'client', 'dist', 'index.html'))
     );
 }
+
+
+app.get('/:id', async(req,res)=> {
+    try{
+
+    }catch{
+
+    }
+})
+
+//   try{
+//     let session = await Session.findOne({where: {id: req.params.id}})
+//     return res.json(session)
+// } catch(err){
+//     console.log(err)
+//     return res.json(err)
+// }
 
 
 app.listen(PORT, () => {
