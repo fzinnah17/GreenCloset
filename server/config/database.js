@@ -1,14 +1,14 @@
-import pg from 'pg'
+// import pg from 'pg'
 
-const connectionString = process.env.DATABASE_URL;
+// const connectionString = process.env.DATABASE_URL;
 
-const config = {
-    user: process.env.PGUSER,
-    password: process.env.PGPASSWORD,
-    host: process.env.PGHOST,
-    port: process.env.PGPORT,
-    database: process.env.PGDATABASE,
-    connectionString
-}
+// const config = {
+//     user: process.env.PGUSER,
+//     password: process.env.PGPASSWORD,
+//     host: process.env.PGHOST,
+//     port: process.env.PGPORT,
+//     database: process.env.PGDATABASE,
+//     connectionString
+// }
 
-export const pool = new pg.Pool(config)
+// export const pool = new pg.Pool(config)
