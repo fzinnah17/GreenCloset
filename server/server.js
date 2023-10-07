@@ -2,9 +2,7 @@ import express from 'express';
 import path from 'path';
 import favicon from 'serve-favicon';
 import dotenv from 'dotenv';
-// import eventsRoutes from './routes/eventsRoutes.js';
-// import locationsRoutes from './routes/locationsRoutes.js';
-
+import productRoutes from './routes/productRoutes.js'
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
@@ -16,6 +14,7 @@ app.use(express.json());
 // // API routes
 // app.use('/api/events', eventsRoutes);
 // app.use('/api/locations', locationsRoutes);
+app.use(productRoutes);
 
 if (process.env.NODE_ENV === 'development') {
     app.use(favicon(path.resolve('../', 'client', 'public', 'party.png')));
@@ -29,7 +28,6 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve('..', 'client', 'dist', 'index.html'))
     );
 }
-
 
 app.listen(PORT, () => {
     console.log(`server listening on http://localhost:${PORT}`);
