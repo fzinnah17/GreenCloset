@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
 import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import ProductsPage from './pages/ProductsPage';
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
     <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/location/:id" element={<LocationEvents />} /> */}
+        <Route path="/products" element={<ProductsPage />} />
       </Routes>
       </div>
   );

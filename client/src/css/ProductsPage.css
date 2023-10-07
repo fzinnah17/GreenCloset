@@ -1,0 +1,124 @@
+.product-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .product-container h1,
+  .product-container h2 {
+    margin: 0;
+    color: #FFFFFF;
+  }
+  
+  .product-card {
+    width: 25%;
+    max-width: 350px;
+    height: 500px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .productcard-image {
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    object-fit: cover;
+    backface-visibility: hidden;
+  }
+  
+  .product-cover {
+    z-index: 1;
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.75s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  /* Card Covers */
+  .product-cover1 {
+    transform: translateY(-100%);
+  }
+  
+  .product-cover2 {
+    transform: translateX(-100%);
+  }
+  
+  .product-cover3 {
+    transform: translateX(100%) scaleX(-1);
+  }
+  
+  .product-card:hover .product-cover1,
+  .product-card:hover .product-cover2 {
+    text-align: center;
+    transform: translateX(0);
+    z-index: 2;
+  }
+  
+  .product-card:hover .product-cover3 {
+    text-align: center;
+    transform: rotateY(0deg);
+    z-index: 2;
+  }
+  
+  .description-text {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: calc(4 * 1.5em);
+  }
+  
+  .product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .product-card:hover::before {
+    opacity: 1;
+  }
+  
+  .product-cover button {
+    z-index: 2;
+    all: unset;
+    cursor: pointer;
+    padding: 0.5em;
+    outline: 1px solid #d4aa00;
+    color: #d4aa00;
+    margin-top: 0.5em;
+  }
+  
+  .product-cover button:hover {
+    all: unset;
+    cursor: pointer;
+    padding: 0.5em;
+    color: white;
+    background-color: #d4aa00;
+  }
+  
