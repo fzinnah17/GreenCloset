@@ -2,9 +2,12 @@ import express from 'express';
 import path from 'path';
 import favicon from 'serve-favicon';
 import dotenv from 'dotenv';
+<<<<<<< HEAD
 import getProductByID from './controllers/productController.js'
 // import eventsRoutes from './routes/eventsRoutes.js';
 // import locationsRoutes from './routes/locationsRoutes.js';
+=======
+>>>>>>> 61f07f4f1b1d6602c11127057975358f33280504
 
 dotenv.config();
 
