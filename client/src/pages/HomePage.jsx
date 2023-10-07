@@ -1,9 +1,15 @@
 import React from 'react';
-
+import Hook from '../components/Hook.jsx';
+import Cards from '../components/Cards.jsx';
+import About from '../components/About.jsx';
+import "./HomePage.css";
 const HomePage = () => {
     return (
         <div className="homepage-container">
-            Hi the app is working
+            <Hook />
+            <Cards />
+            <About/>
+          
         </div>
     );
 }

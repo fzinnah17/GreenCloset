@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .item {
+    flex-grow: 1;
+    background-color: purple;
+    height: 150px;
+    padding: 5px;
+    width: 10px;
+    
+   
+  }
+  
+  .item + .item {
+    margin-left: 2%;
+  }
