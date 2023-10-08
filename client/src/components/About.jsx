@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../css/About.css";
-import Aboutpic from './collaborating.jpg';
+// import { Aboutpic } from '../public/Aboutpic';
 
 const About = () => {
     return (
        <div className='About'>
         <h1 className='Aboutname'> About</h1>
        
-       <p className='aboutp'>GreenCloset's mission is to promote sustainability in fashion, offering inclusive and environmentally responsible clothing solutions.
-       Our focus is on under-resourced communities, providing free, quality clothing, especially for important occasions like job interviews. Leveraging technology, we track and address environmental disparities, fostering eco-conscious choices for a greener, more equitable world. To tackle fast fashion's detrimental effects, we emphasize recycling and upcycling, ensuring clothing finds new life instead of contributing to waste.
+       <p className='aboutp'>
+       At GreenCloset, we are dedicated to making a meaningful impact in low-income communities, where many individuals struggle to access basic necessities, including clothing. In the context of New York City colleges, where over 50% of students face financial challenges, we've developed a unique resource—an innovative mobile and web app that facilitates the easy exchange of clothing. 
 </p>
-         <div className="imageAbout">
+         {/* <div className="imageAbout">
        <img src={Aboutpic} alt="pic" width="300" height="300" align="middle"/>
-       </div>
+       </div> */}
 
         
         </div>

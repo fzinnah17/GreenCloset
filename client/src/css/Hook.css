@@ -1,4 +1,28 @@
 .GC{
     font-family: 'Courier New';
     text-align: center;
+    border:1px solid green;
+}
+
+.page-container{
+    border: 1px solid red;
+    display:flex;
+    align-items: center;
+    column-gap:40px;
+}
+.content{
+    border-radius: 25px;
+    background: #73AD21;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    word-wrap: break-word;
+    padding-left: 50px;
+    font-size: 25px;
+}
+.right-image{
+    width:300px;
+    height:300px;;
 }

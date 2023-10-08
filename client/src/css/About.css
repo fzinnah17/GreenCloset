@@ -1,10 +1,30 @@
+.About{
+    background-color: #fffd8d;
+    border-radius: 25px;
+}
 .Aboutname{
     text-align: center;
     padding: 15px;
 }
 .aboutp{
     text-align: center;
+    word-wrap: break-word;
+    text-indent: 30px;
+    margin-left: 10%;
+    margin-right:10%;
+    font-size: 25px;
     
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.p2{
+    text-align: center;
+    margin-left: 10%;
+    font-size: 22px;
+    margin-right:10%;
+   
 }
 .Aboutpic{
    padding: 0px;
