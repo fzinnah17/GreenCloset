@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import SearchBar from "../components/SearchBar";
 import "../css/Navbar.css";
 import MainLogo from '../public/MainLogo.svg'
-import { Link, useNavigate, NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Title = ({ stateProp, click, className, text = "MENU", rectangleClassName }) => {
     const [state, dispatch] = useReducer(reducer, {
@@ -54,7 +54,16 @@ function reducer(state, action) {
     }
 }
 
-const Navbar = () => {
+const Navbar = ({ aboutRef }) => {
+    const handleAboutClick = () => {
+        if (aboutRef.current) {
+          console.log('About ref is not null');
+          aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.log('About ref is null');
+        }
+      };
+      
   
     const LogoWTitle = ({ className }) => ( 
         <div className={`logoWithTitle ${className}`}>
@@ -86,9 +95,9 @@ const Navbar = () => {
                         <NavLink to="/products" className="logoLink">
                             <Title className="menuItem highlighted" text="PRODUCTS" />
                         </NavLink>
-                        <NavLink to="/#about" className="logoLink">
-                            <Title className="menuItem highlighted" text="ABOUT" />
-                        </NavLink>
+                        <div onClick={handleAboutClick} className="logoLink">
+            <Title className="menuItem highlighted" text="ABOUT" />
+        </div>
                     </div>
                 </div>
                 <div className="logoSection">
