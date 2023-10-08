@@ -29,7 +29,6 @@
 	height: 50px;
 	width: 50px;
 	vertical-align: bottom;
-
 }
 
 .mglass {
@@ -84,7 +83,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: white !important;
     border: 1px solid #ccc;
     border-top: none;
     z-index: 20;
