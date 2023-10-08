@@ -9,6 +9,7 @@ export const getProductsForPage = async (req, res) => {
     await delay(1000);
 
     const productData = products.map(product => ({
+      id: product.id,
       name: product.name,
       image: product.image
     }));
