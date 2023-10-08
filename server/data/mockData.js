@@ -5,7 +5,7 @@ export const products = [
       description: 'Stay cozy and stylish this winter with our warm winter coat.',
       tags: ['coats', 'winter'],
       userid: 1001,
-      image: 'image1-url'
+      image: './assets/wintercoat.jpg'
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export const products = [
       description: 'A perfect choice for formal occasions, this elegant blouse is a must-have.',
       tags: ['blouses', 'formal'],
       userid: 1002,
-      image: 'image2-url'
+      image: './assets/WhiteBlouse.jpg'
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const products = [
       description: 'Look sharp and professional with these stylish pants for the workplace.',
       tags: ['pants', 'professional'],
       userid: 1003,
-      image: 'image3-url'
+      image: '/assets/professionalpants.jpg'
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ export const products = [
       description: 'Get ready to dazzle at your next party with this stunning party dress.',
       tags: ['party', 'formal'],
       userid: 1004,
-      image: 'image4-url'
+      image: './assets/cherrydress.jpg'
     },
     {
       id: 5,
@@ -37,7 +37,7 @@ export const products = [
       description: 'Stay warm and comfy this winter with our cozy sweater.',
       tags: ['winter', 'coats'],
       userid: 1005,
-      image: 'image5-url'
+      image: './assets/wintercoat.jpg'
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ export const products = [
       description: 'Make a statement at formal events with this impeccably tailored suit.',
       tags: ['formal', 'coats'],
       userid: 1006,
-      image: 'image6-url'
+      image: './assets/blackblazer.jpg'
     },
     {
       id: 7,
@@ -53,7 +53,7 @@ export const products = [
       description: 'Elevate your professional look with this sleek and stylish blazer.',
       tags: ['professional', 'coats'],
       userid: 1007,
-      image: 'image7-url'
+      image: './assets/blackblazer.jpg'
     },
     {
       id: 8,
@@ -61,7 +61,7 @@ export const products = [
       description: 'Keep your feet warm and dry in these sturdy winter boots.',
       tags: ['winter', 'shoes'],
       userid: 1008,
-      image: 'image8-url'
+      image: './assets/whiteshoes.jpg'
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ export const products = [
       description: 'Add a fun and festive touch to your party outfit with this hat.',
       tags: ['party', 'accessories'],
       userid: 1009,
-      image: 'image9-url'
+      image: './assts/sandals.jpg'
     },
     {
       id: 10,
