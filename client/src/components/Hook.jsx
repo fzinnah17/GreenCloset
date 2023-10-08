@@ -9,15 +9,19 @@ const Hook = () => {
         
     
     <div className="hook"> 
-    <header className='headername'>
+    
        <h1 className='GC'>Green Closet </h1> 
-       </header>
+       <div classsName='cta-container'>
        <p className='description'>
-       "Clothing the Future, One Wardrobe at a Time: Share Your Closet with GreenCloset!" 
+       Clothing the Future, One Wardrobe at a Time:  
+        in GreenCloset you can share your closet and find a treasure, while you help the planet.
+       
        </p>
        <div className="image">
        <img src={hookpic} alt="pic" width="300" height="300" align="middle"/>
        </div>
+       </div>
+
        
 
 

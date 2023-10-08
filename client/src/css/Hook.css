@@ -1,4 +1,25 @@
 .GC{
     font-family: 'Courier New';
     text-align: center;
+    border:1px solid green;
+}
+.hook{
+    border:1px solid black;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.description{
+    border: 1px solid yellow;
+    width: 270px;
+    text-align: left;
+    word-wrap: break-word;
+    padding-left: 50px;
+}
+.cta-container{
+    border: 1px solid red;
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
 }
