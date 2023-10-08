@@ -11,13 +11,12 @@ const Hook = () => {
     return (
     <div className="hook"> 
     
-       <h1 className='GC'>Green Closet </h1> 
       
       
       <div className="page-container">
       <div className="label">
         
-    <p className="text-wrapper">We believe in climate change, in zero waste and in charitable giving</p>
+    <p className="text-wrapper">Clothing the Future, One Wardrobe at a Time</p>
     </div>
         <button className="btn"> View</button>
 

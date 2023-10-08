@@ -1,31 +1,42 @@
+.hook{
+    background-image: url(../public/clothing.png);
+    background-size: cover;
+    height: 500px;
+}
+
 .label {
+    border:3px solid red;
     height: 350px;
     width: 691px;
+    bottom: 700px;
+    
 }
 
  .text-wrapper {
-    color: var(--secondarysecondary-10);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    font-weight: 300;
-    left: 0;
-    letter-spacing: 0;
-    
-    line-height: 80px;
-    
-    top: 0px;
-    width: 691px;
+color:white;
+font-family:  Helvetica;
+
+font-size: 60px;
+font-weight: 600px;
+
+letter-spacing: 0;
+line-height: 70px;
+right:3px;
+top: 0;
+width: 632px;
+
 }
 .btn {
     background-color:white;
     color: green;
     border: 3px solid green;
-   
+    bottom:50px;
     padding: 20px 40px;
     font-size: 16px;
     position: relative;
-    left: 100px;
+    left: 200px;
     transition: transform 0.3s;
+    
   }
   
   .btn:hover {

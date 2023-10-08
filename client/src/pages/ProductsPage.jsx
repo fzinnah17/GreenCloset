@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSearchParams, useNavigate, Link } from 'react-router-dom';
 import '../css/ProductsPage.css';
-import { products as mockProducts } from '../../../server/data/mockData.js'; // I've added this line assuming you have exported products from mockData
+import { products as mockProducts } from '../../../server/data/mockData.js';
 
 
 const ProductsPage = () => {
@@ -32,22 +32,37 @@ const ProductsPage = () => {
     }, [searchTerm]);
 
     return (
-        <div className="product-container">
-            {products && products.length > 0 && products.map((product, index) => (
-                <div key={index} className="product-card">
-                    <img className="productcard-image" src={product.image} alt={product.name} />
-                    <div className={`product-cover product-cover${(index % 3) + 1}`}>
-                        <h1 style={{ margin: "0.25em" }}>{product.name}</h1>
-                        <h2 className="description-text" style={{ margin: "0.1em", marginBottom: "1.5em" }}>{product.description}</h2>
-                        <button onClick={() => navigate(`/view/${product.id}`)}>View</button>
+<div className="product-container">
+    {products && products.length > 0 &&
+        (() => {
+            const productElements = [];
+            for (let i = 0; i < products.length; i++) {
+                const product = products[i];
+                if (!product.id) {
+                    console.error(`Product at index ${i} does not have an ID`, product);
+                    continue; // Skip this iteration
+                }
+                productElements.push(
+                    <div key={product.id} className="product-card">
+                        <img className="productcard-image" src={product.image} alt={product.name} />
+                        <div className={`product-cover product-cover${(i % 3) + 1}`}>
+                            <h1 style={{ margin: "0.25em" }}>{product.name}</h1>
+                            <h2 className="description-text" style={{ margin: "0.1em", marginBottom: "1.5em" }}>{product.description}</h2>
+                            <Link to={`/product-page/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <button>View</button>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-            ))}
-            <div onClick={() => navigate("/add")} className="content-btn content-btn-add">
-                <span className="plus-btn">+</span>
-                <span className="add-text">Add</span>
-            </div>
-        </div>
+                );
+            }
+            return productElements;
+        })()}
+    <div onClick={() => navigate("/add")} className="content-btn content-btn-add">
+        <span className="plus-btn">+</span>
+        <span className="add-text">Add</span>
+    </div>
+</div>
+
     );
 }
 

@@ -1,6 +1,8 @@
 .About{
-    background-color: #fffd8d;
+    background-color: white;
     border-radius: 25px;
+    height: 500px;
+    border: solid 3px red;
 }
 .Aboutname{
     text-align: center;
@@ -14,6 +16,15 @@
     margin-right:10%;
     font-size: 25px;
     
+}
+.aboutp2{
+    text-align: center;
+    word-wrap: break-word;
+    text-indent: 30px;
+    margin-left: 10%;
+    margin-right:10%;
+    font-size: 25px;
+
 }
 .box{
     display: flex;
