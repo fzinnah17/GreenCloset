@@ -37,7 +37,7 @@ export const products = [
       description: 'Stay warm and comfy this winter with our cozy sweater.',
       tags: ['winter', 'coats'],
       userid: 1005,
-      image: './assets/wintercoat.jpg'
+      image: 'https://swimsuit.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTg3MTg1OTkwOTI0NzczMjYx/stylish-coats-hero.png'
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ export const products = [
       description: 'Make a statement at formal events with this impeccably tailored suit.',
       tags: ['formal', 'coats'],
       userid: 1006,
-      image: './assets/blackblazer.jpg'
+      image: 'https://cdn.suitsupply.com/image/upload/ar_10:21,b_rgb:efefef,bo_200px_solid_rgb:efefef,c_pad,g_north,w_2600/b_rgb:efefef,c_lfill,g_north,dpr_1,w_768,h_922,f_auto,q_auto,fl_progressive/products/suits/default/Winter/P6586_1.jpg'
     },
     {
       id: 7,
@@ -53,15 +53,15 @@ export const products = [
       description: 'Elevate your professional look with this sleek and stylish blazer.',
       tags: ['professional', 'coats'],
       userid: 1007,
-      image: './assets/blackblazer.jpg'
+      image: 'https://m.media-amazon.com/images/I/61ZriLuxxFL._AC_UY1000_.jpg'
     },
     {
       id: 8,
       name: 'Winter Boots',
-      description: 'Keep your feet warm and dry in these sturdy winter boots.',
+      description: 'https://rukminim2.flixcart.com/image/850/1000/l3ahpjk0/shoe/z/d/a/6-2202-6-xtoon-white-original-imagefct8fcmpdkd.jpeg?q=90',
       tags: ['winter', 'shoes'],
       userid: 1008,
-      image: './assets/whiteshoes.jpg'
+      image: 'https://www.switchbacktravel.com/sites/default/files/articles%20/Winter%20Boots%20%28Sorel%20Caribou%20in%20snow%20-%20m%29.jpg'
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ export const products = [
       description: 'Add a fun and festive touch to your party outfit with this hat.',
       tags: ['party', 'accessories'],
       userid: 1009,
-      image: './assets/sandals.jpg'
+      image: 'https://connerhats.com/cdn/shop/products/straw-hat-beach-hats-brays-beach-sun-hat-natural-small-medium-28360098742357.jpg?v=1628344137'
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ export const products = [
       description: 'Look sharp and professional with this classic dress shirt.',
       tags: ['professional', 'blouses'],
       userid: 1010,
-      image: './assets/top.jpg'
+      image: 'https://cdn.shopify.com/s/files/1/0266/6276/4597/files/300945683BLUE_2.jpg?v=1690546737'
     },
     {
       id: 11,
@@ -85,7 +85,7 @@ export const products = [
       description: 'Be the belle of the ball in this stunning formal ballgown.',
       tags: ['formal', 'party'],
       userid: 1011,
-      image: 'image11-url'
+      image: 'https://shinyparty.com/cdn/shop/products/Princess_V_Neck_Long_Pink_Light_Blue_Prom_Dresses_Puffy_Pink_Light_Blue_Formal_Evening_Dresses_Light_Blue_Party_Dresses_Pink_Ball_Gown_1024x1024.jpg?v=1581473617'
     },
     {
       id: 12,
@@ -93,7 +93,7 @@ export const products = [
       description: 'Stay warm and stylish with this cozy winter scarf.',
       tags: ['winter', 'accessories'],
       userid: 1012,
-      image: 'image12-url'
+      image: 'https://img.fruugo.com/product/1/27/444646271_max.jpg'
     },
     {
       id: 13,
