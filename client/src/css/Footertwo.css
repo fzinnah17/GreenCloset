@@ -1,0 +1,7 @@
+
+.Footer{
+    background-image: url(../components/FooterFooterpic.png);
+    background-size: cover;
+    height: 300px;
+    width: 1200px;
+}
