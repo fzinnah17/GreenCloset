@@ -18,9 +18,10 @@
   
   .product-card {
     width: 25%;
-    max-width: 350px;
-    height: 500px;
+    max-width: 200px;
+    height: 100px;
     background-color: transparent;
+    border-radius: 25px;
     overflow: hidden;
     position: relative;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
@@ -29,7 +30,7 @@
   .productcard-image {
     width: 100%;
     max-width: 350px;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     backface-visibility: hidden;
   }
@@ -37,8 +38,8 @@
   .product-cover {
     z-index: 1;
     width: 100%;
-    max-width: 350px;
-    height: 500px;
+    max-width: 250px;
+    height: 300px;
     overflow: hidden;
     display: flex;
     flex-direction: column;

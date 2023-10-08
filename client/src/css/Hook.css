@@ -13,13 +13,14 @@
 .content{
     border-radius: 25px;
     background: #73AD21;
-    width: 250px;
-    height: 120px;
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     text-align: left;
     word-wrap: break-word;
     padding-left: 50px;
+    font-size: 25px;
 }
 .right-image{
     width:300px;
