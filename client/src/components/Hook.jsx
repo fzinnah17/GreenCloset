@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../css/Hook.css";
-import hookpic from './boutique.jpg';
+import hookpic from '../public/pic1person.jpg';
 
 
 const Hook = () => {

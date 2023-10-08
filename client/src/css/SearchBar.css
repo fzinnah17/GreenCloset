@@ -1,0 +1,102 @@
+/* SearchBar.css */
+
+.button {
+	display: inline-block;
+	margin: 4px 2px;
+	background-color: #444;
+	font-size: 14px;
+	padding-left: 32px;
+	padding-right: 32px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+.button:hover {
+	transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+}
+
+.search-container {
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+}
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+	transform: rotate(-45deg);
+}
+
+.searchbutton {
+	position: absolute;
+	font-size: 22px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+}
+
+.search {
+	position: absolute;
+	left: 49px;
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 363px;
+	padding: 0 16px 0 0;
+}
+
+.expandright {
+	left: auto;
+	right: 49px;
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 20;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestions div {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestions div:hover {
+    background-color: #f6f6f6;
+}
