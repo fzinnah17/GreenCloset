@@ -3,17 +3,19 @@ import PropTypes from "prop-types";
 import SearchBar from "../components/SearchBar";
 import "../css/Navbar.css";
 import MainLogo from '../public/MainLogo.svg'
-import { NavLink } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Title = ({ stateProp, click, className, text = "MENU", rectangleClassName }) => {
     const [state, dispatch] = useReducer(reducer, {
         state: stateProp || "default",
         click: click || "menu-default",
     });
-
+    const navigate = useNavigate()
     return (
         <div
+        onClick={()=> {navigate('/')}}
             className={`TITLE ${className}`}
+
             onMouseLeave={() => {
                 dispatch("mouse_leave");
             }}
@@ -53,6 +55,7 @@ function reducer(state, action) {
 }
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const LogoWTitle = ({ className }) => ( 
         <div className={`logoWithTitle ${className}`}>
             <div className="logoFrame">
