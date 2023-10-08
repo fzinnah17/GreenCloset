@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/ProductPage.css'
 const ProductPage = () => {
 return (
     <main id="product-page">
