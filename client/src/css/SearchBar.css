@@ -34,7 +34,7 @@
 .mglass {
 	display: inline-block;
 	pointer-events: none;
-	transform: rotate(-45deg);
+	/* transform: rotate(-45deg); */
 }
 
 .searchbutton {

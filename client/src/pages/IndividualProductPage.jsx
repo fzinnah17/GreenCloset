@@ -5,7 +5,6 @@ import '../css/IndividualProductPage.css'
 const ProductPage = () => {
     let { id } = useParams()
     const [product, setProduct] = useState({})
-    console.log(id)
 
     const getProduct = async() => {
         let req = await fetch(`/api/products/${id}`)
@@ -19,7 +18,7 @@ const ProductPage = () => {
 return (
     <main id="product-page">
         <header>
-            <img src="https://picsum.photos/500/500" alt="" />
+            <img id='product-page-main-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNfdUG_QrsP-UM5bNa4oUJRnHcDkzeQyD5ITZiNE4SeMr_WnG0zWb-9y0Gj69D5cxhmE&usqp=CAU" alt="" />
             <section id="product-page-info-section">
                 <h2 id="product-page-title">{product?.name}</h2>
                 <p id="product-page-description">{product?.description}</p>
