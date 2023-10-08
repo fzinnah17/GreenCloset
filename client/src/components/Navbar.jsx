@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import SearchBar from "../components/SearchBar";
 import "../css/Navbar.css";
 import MainLogo from '../public/MainLogo.svg'
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, NavLink } from "react-router-dom";
 
 const Title = ({ stateProp, click, className, text = "MENU", rectangleClassName }) => {
     const [state, dispatch] = useReducer(reducer, {
