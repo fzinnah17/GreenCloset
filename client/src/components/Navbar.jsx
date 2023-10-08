@@ -55,7 +55,7 @@ function reducer(state, action) {
 }
 
 const Navbar = () => {
-    const navigate = useNavigate();
+  
     const LogoWTitle = ({ className }) => ( 
         <div className={`logoWithTitle ${className}`}>
             <div className="logoFrame">

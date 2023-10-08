@@ -2,6 +2,6 @@
 .Footer{
     background-image: url(../public/FooterFooterpic.png);
     background-size: cover;
-    height: 300px;
-    width: 1200px;
+    height: 400px;
+    width: 100%;
 }
