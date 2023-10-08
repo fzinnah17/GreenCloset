@@ -11,8 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 1264px; */
-    /* border: 1px solid black; */
     width: 100%;
     padding: 10px 5%;
 }
@@ -22,6 +20,7 @@
     align-items: center;
     padding: 8px;
     max-width: 50px;
+    text-decoration: none;
 }
 
 .menuItems {
@@ -30,15 +29,18 @@
     align-items: center;
     gap: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .menuItem {
     flex: 0 0 auto;
+    text-decoration: none;
 }
 
 .highlighted {
     background-color: unset;
     justify-content: center;
+    text-decoration: none;
 }
 
 .logoSection {
@@ -102,6 +104,11 @@
     white-space: nowrap;
     width: fit-content;
 }
+.logoLink {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the color remains the same */
+}
+
 
 .mainLogo{
     height: 65px;

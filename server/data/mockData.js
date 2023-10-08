@@ -5,7 +5,7 @@ export const products = [
       description: 'Stay cozy and stylish this winter with our warm winter coat.',
       tags: ['coats', 'winter'],
       userid: 1001,
-      image: './assets/wintercoat.jpg'
+      image: 'https://cdni.llbean.net/is/image/wim/271139_33018_41?hei=1095&wid=950&resMode=sharp2&defaultImage=llbprod/A0211793_2'
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export const products = [
       description: 'A perfect choice for formal occasions, this elegant blouse is a must-have.',
       tags: ['blouses', 'formal'],
       userid: 1002,
-      image: './assets/WhiteBlouse.jpg'
+      image: 'https://m.media-amazon.com/images/I/71KMmyUgubL._AC_UY1000_.jpg'
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const products = [
       description: 'Look sharp and professional with these stylish pants for the workplace.',
       tags: ['pants', 'professional'],
       userid: 1003,
-      image: '/assets/professionalpants.jpg'
+      image: 'https://i.ebayimg.com/images/g/H~cAAOSwudVg2Sau/s-l1600.jpg'
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ export const products = [
       description: 'Get ready to dazzle at your next party with this stunning party dress.',
       tags: ['party', 'formal'],
       userid: 1004,
-      image: './assets/cherrydress.jpg'
+      image: 'https://www.estylecdn.com/manufcols/sherrihill/current/zoom/Sherri-Hill-55101-wine-50622.jpg'
     },
     {
       id: 5,
@@ -69,7 +69,7 @@ export const products = [
       description: 'Add a fun and festive touch to your party outfit with this hat.',
       tags: ['party', 'accessories'],
       userid: 1009,
-      image: './assts/sandals.jpg'
+      image: './assets/sandals.jpg'
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ export const products = [
       description: 'Look sharp and professional with this classic dress shirt.',
       tags: ['professional', 'blouses'],
       userid: 1010,
-      image: 'image10-url'
+      image: './assets/top.jpg'
     },
     {
       id: 11,

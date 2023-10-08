@@ -59,11 +59,14 @@ const Navbar = () => {
     const LogoWTitle = ({ className }) => ( 
         <div className={`logoWithTitle ${className}`}>
             <div className="logoFrame">
-            <img src={MainLogo} alt="Main Logo" className="mainLogo" />
-                <div className="logoText">Green Closet</div>
+                <img src={MainLogo} alt="Main Logo" className="mainLogo" />
+                <NavLink to="/" className="logoLink"> {/* <-- Wrap the text with NavLink */}
+                    <div className="logoText">Green Closet</div>
+                </NavLink> {/* <-- End of NavLink */}
             </div>
         </div>
     );
+
 
     const MenuIconsScreen = () => (
         <div className="menuIconsScreen">
@@ -80,9 +83,12 @@ const Navbar = () => {
             <div className="navbarContent">
                 <div className="menuSection">
                     <div className="menuItems">
-                        <Title className="menuItem highlighted" text="NEWS" />
-                        <Title className="menuItem highlighted" text="EVENTS" />
-                        <Title className="menuItem highlighted" text="ABOUT" />
+                        <NavLink to="/products" className="logoLink">
+                            <Title className="menuItem highlighted" text="PRODUCTS" />
+                        </NavLink>
+                        <NavLink to="/#about" className="logoLink">
+                            <Title className="menuItem highlighted" text="ABOUT" />
+                        </NavLink>
                     </div>
                 </div>
                 <div className="logoSection">

@@ -1,56 +1,62 @@
-.hook{
-    background-image: url(../public/clothing.png);
-    background-size: cover;
-    height: 500px;
+.hook {
+  background-image: url(../public/clothing.png);
+  background-size: cover;
+  height: 732px;
+  width: 1440px;
+  display: flex;
+  align-items: center; 
 }
 
 .label {
-    border:3px solid red;
-    height: 350px;
-    width: 691px;
-    bottom: 700px;
-    
-}
-
- .text-wrapper {
-color:white;
-font-family:  Helvetica;
-
-font-size: 60px;
-font-weight: 600px;
-
-letter-spacing: 0;
-line-height: 70px;
-right:3px;
-top: 0;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  height: 384px;
 width: 632px;
+}
+
+.text-wrapper {
+  color: #ffffff;
+  font-family: "Bell MT-Bold", Helvetica;
+  font-size: 67px;
+  font-weight: 700;
+  padding-left: 30px;
+  letter-spacing: 0;
+  line-height: 96px;
+
+
+  width: 632px;
+}
+
+.btn {
+  background-color: white;
+  color: green;
+  border: 3px solid green;
+  bottom: 50px;
+  padding: 20px 40px;
+  font-size: 16px;
+  position: relative;
+  left: 200px;
+  transition: transform 0.3s;
 
 }
-.btn {
-    background-color:white;
-    color: green;
-    border: 3px solid green;
-    bottom:50px;
-    padding: 20px 40px;
-    font-size: 16px;
-    position: relative;
-    left: 200px;
-    transition: transform 0.3s;
-    
+
+.btn:hover {
+  animation: bubble 0.4s ease-out;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1);
   }
-  
-  .btn:hover {
-    animation: bubble 0.4s ease-out;
+
+  50% {
+    transform: scale(1.2);
   }
-  
-  @keyframes bubble {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
+
+  100% {
+    transform: scale(1);
   }
+}
