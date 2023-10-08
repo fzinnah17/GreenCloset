@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import "../css/Hook.css";
 
+import hookpic from '../public/pic1person.jpg';
 
 
 const Hook = () => {

@@ -1,17 +1,35 @@
-import React, { useState, useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import '../css/ProductsPage.css';
+import { products as mockProducts } from '../../../server/data/mockData.js'; // I've added this line assuming you have exported products from mockData
+
 
 const ProductsPage = () => {
-    const [products, setProducts] = useState([]);
     const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+    const searchTerm = searchParams.get('q');
+
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('/api/productsPage')
-            .then(response => response.json())
-            .then(data => setProducts(data))
-            .catch(error => console.error('There was an error fetching products:', error));
-    }, []);
+        if (searchTerm) {
+            // if there's a searchTerm, filter mock products based on tags
+            const filteredProducts = mockProducts.filter(product => 
+                product.tags.some(tag => tag.toLowerCase() === searchTerm.toLowerCase())
+            );   
+            console.log("Filtered products:", filteredProducts);         
+            setProducts(filteredProducts);
+        } else {
+            // Fetch all products if there's no searchTerm
+            fetch('/api/productsPage')
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Fetched products:", data);
+                    setProducts(data)
+                })
+                .catch(error => console.error('There was an error fetching products:', error));
+        }
+    }, [searchTerm]);
 
     return (
         <div className="product-container">
@@ -25,6 +43,10 @@ const ProductsPage = () => {
                     </div>
                 </div>
             ))}
+            <div onClick={() => navigate("/add")} className="content-btn content-btn-add">
+                <span className="plus-btn">+</span>
+                <span className="add-text">Add</span>
+            </div>
         </div>
     );
 }
