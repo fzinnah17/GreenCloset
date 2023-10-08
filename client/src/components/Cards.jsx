@@ -35,8 +35,9 @@ const Cards = () => {
                 >
                   {product.description}
                 </h2>
-                <button onClick={() => navigate(`/view/${product.id}`)}>View</button>
-              </div>
+                <Link to={`/product-page/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <button>View</button>
+                </Link>              </div>
             </div>
           ))}
       </div>

@@ -29,6 +29,7 @@ const SearchBar = () => {
                 />
                 <label className="button searchbutton" htmlFor="searchleft">
                     <span className="mglass">&#9906;</span>
+                    
                 </label>
 
             </form>

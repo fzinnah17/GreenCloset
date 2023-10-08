@@ -3,26 +3,33 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100vw;
+    background-color: #CFDACA;
 }
 
 .navbarContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1264px;
+    /* width: 1264px; */
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 10px 5%;
 }
 
 .menuSection {
     display: flex;
     align-items: center;
-    padding: 8px 0;
+    padding: 8px;
+    max-width: 50px;
 }
 
 .menuItems {
     color: rgba(92, 124, 76, 1);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
+    cursor: pointer;
 }
 
 .menuItem {
@@ -38,21 +45,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 325px;
-    padding-right: 80px;
+    /* padding-right: 80px; */
+    margin: 0;
     width: 408px;
+    cursor: pointer;
+    /* border: 1px solid black; */
 }
 
-.logo {
-    position: relative;
-    width: 282px;
-}
-
-.logoImage {
-    height: 44px;
-    position: relative;
-    width: 48px;
-}
 
 .logoTitle {
     color: rgba(92, 124, 76, 1);
@@ -75,8 +74,19 @@
     display: inline-flex;
     gap: 8px;
     position: relative;
+    height: 10vh;
 }
 
+.logo {
+    position: relative;
+    width: 282px;
+}
+
+.logoImage {
+    max-height: 44px;
+    position: relative;
+    /* width: 48px; */
+}
 .logoText {
     color: rgba(101, 136, 84, 1);
     font-family: "Abhaya Libre ExtraBold-Regular", Helvetica;
@@ -90,6 +100,12 @@
     width: fit-content;
 }
 
+.mainLogo{
+    height: 65px;
+    /* border: 1px solid black; */
+    margin: 0;
+}
+
 .menuIconsScreen {
     align-items: center;
     display: inline-flex;
@@ -100,4 +116,6 @@
 
 .menuIconInstance {
     flex: 0 0 auto;
+    font-size: 25px;
+    color: #5C7C4C;
 }
