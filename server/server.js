@@ -12,8 +12,6 @@ const app = express();
 app.use(express.json());
 
 // // API routes
-// app.use('/api/events', eventsRoutes);
-// app.use('/api/locations', locationsRoutes);
 app.use(productRoutes);
 
 if (process.env.NODE_ENV === 'development') {
