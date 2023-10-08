@@ -26,10 +26,11 @@ const SearchBar = () => {
                     value={searchText}
                     onChange={handleChange}
                     autoComplete="off"
+                    style={{"backgroundColor": "transparent", "border": "1px solid rgba(0, 0, 0, 0.255)", "height": "35px", "padding": "5px", "width": "250px", "marginTop": "-10px"}}
                 />
                 <label className="button searchbutton" htmlFor="searchleft">
-                    <span className="mglass">&#9906;</span>
-                    
+                    {/* <span className="mglass">&#9906;</span> */}
+                    <ion-icon id='search-icon' style={{"color":"#5C7C4C", "fontSize": "25px", "marginLeft": "5px", "marginTop": "5px" }} name="search-outline"></ion-icon>
                 </label>
 
             </form>

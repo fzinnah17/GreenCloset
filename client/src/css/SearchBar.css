@@ -29,6 +29,8 @@
 	height: 50px;
 	width: 50px;
 	vertical-align: bottom;
+	border: 1px solid black;
+
 }
 
 .mglass {
@@ -99,4 +101,8 @@
 
 .suggestions div:hover {
     background-color: #f6f6f6;
+}
+
+#search-icon {
+	font-size: 2em;
 }
