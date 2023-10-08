@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import "../css/About.css";
-// import { Aboutpic } from '../public/Aboutpic';
 
 const About = () => {
     return (
-       <div className='About'>
+        <div className='About' id="about">
         <h1 className='Aboutname'> About</h1>
        
        <p className='aboutp'>
@@ -15,10 +13,6 @@ const About = () => {
         Our mission is to ensure that individuals always have clothes on their backs, especially for important occasions like first interviews and meetings. Through the power of giving, we are creating a supportive community where everyone can access the attire they need to succeed, bridging the gap for the countless low-income individuals who face clothing insecurity. 
 
         </p>
-         {/* <div className="imageAbout">
-       <img src={Aboutpic} alt="pic" width="300" height="300" align="middle"/>
-       </div> */}
-
         
         </div>
 

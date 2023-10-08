@@ -12,8 +12,10 @@ const App = () => {
     <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/#about" element={<HomePage />} />
         <Route path="/product-page/:id" element={<IndividualProductPage />} />
         <Route path="/products" element={<ProductsPage />} />
+        
       </Routes>
       </div>
   );
