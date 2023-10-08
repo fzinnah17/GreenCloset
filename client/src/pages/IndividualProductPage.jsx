@@ -18,7 +18,7 @@ const ProductPage = () => {
 return (
     <main id="product-page">
         <header>
-            <img id='product-page-main-image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvNfdUG_QrsP-UM5bNa4oUJRnHcDkzeQyD5ITZiNE4SeMr_WnG0zWb-9y0Gj69D5cxhmE&usqp=CAU" alt="" />
+            <img id='product-page-main-image' src={product?.image} alt="" />
             <section id="product-page-info-section">
                 <h2 id="product-page-title">{product?.name}</h2>
                 <p id="product-page-description">{product?.description}</p>

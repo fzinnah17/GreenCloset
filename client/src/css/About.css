@@ -15,10 +15,11 @@
     margin-left: 10%;
     margin-right:10%;
     font-size: 25px;
+    font-weight: 300;
 
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; */
     
 }
 .aboutp2{
@@ -28,8 +29,9 @@
     margin-left: 10%;
     margin-right:10%;
     font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; */
 
 }
 .box{
