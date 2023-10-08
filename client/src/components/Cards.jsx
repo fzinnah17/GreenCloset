@@ -17,13 +17,16 @@ const Cards = () => {
     return (
         <div className="product-container">
         {products &&
-          products.slice(0, 6).map((product, index) => (
+          products.slice(0, 3).map((product, index) => (
+            
             <div key={index} className="product-card">
+
               <img
                 className="productcard-image"
                 src={product.image}
                 alt={product.name}
               />
+
               <div className={`product-cover product-cover${(index % 3) + 1}`}>
                 <h1 style={{ margin: "0.25em" }}>{product.name}</h1>
                 <h2
