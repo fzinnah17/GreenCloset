@@ -1,10 +1,10 @@
-*ClimateHackColumbia*
+*GreenCloset*
 
-Submitted by: **Your name here**
+Submitted by: **Farnaz Zinnah, **
 
 About this web app: **App description here**
 
-Time spent: **X** hours
+Time spent: **36** hours
 
 ## Required Features
 
