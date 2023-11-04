@@ -1,35 +1,58 @@
-*GreenCloset*
+# GreenCloset - Hackathon Winner Project
 
-Submitted by: **Farnaz Zinnah, **
+Submitted by: Farnaz Zinnah, Anastasia Sirman, 
+Natalie Nguyen, Carla Mandiola García, 
+Nino IVANISHVILI, and Mariana Avila
 
-About this web app: **App description here**
+## About GreenCloset:
 
-Time spent: **36** hours
+GreenCloset is an innovative platform designed to tackle the dual challenge of student needs and textile waste. It's a community-driven solution that connects students who need professional attire with those who have clothes to donate. Our mission is to create a sustainable cycle of clothing reuse within the student community, reducing waste and promoting a supportive network.
 
-## Required Features
+👗 **Sustainable Fashion Revolution**: GreenCloset is more than just a sharing platform; it's a movement towards a more sustainable and empathetic way of living.
 
-The following functionality is on the app:
+🔄 **Circular Economy Model**: By encouraging clothing donations and exchanges, we're promoting a circular economy that benefits everyone involved.
 
-- [ ] **
+🌟 **Rewarding Generosity**: Donors receive points for their contributions, which can be redeemed for various campus services, adding an extra layer of incentive to participate.
+
+## Time Spent:
+
+Development time: **36** hours during a weekend hackathon
+
+## Core Features
+
+The following **core** features were implemented in GreenCloset:
+
+- [x] **User-friendly interface built with React for a seamless experience**
+- [x] **Robust backend with MongoDB for efficient data handling and transactions**
+- [x] **Express.js server setup to manage API requests and responses**
+- [x] **Node.js for a scalable application infrastructure**
+- [x] **Implementation of a points system to reward users for donations**
+- [x] **Integration of incentives like campus service discounts and extended library book holds**
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a brief overview of GreenCloset's functionality:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![GreenCloset Walkthrough](link-to-your-walkthrough-video.gif)
 
-GIF created with ...  LICECap
+GIF created with [LICEcap](http://www.cockos.com/licecap/)
 
-## Notes
+## Challenges and Solutions:
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+During the development of GreenCloset, we encountered and overcame several challenges:
+
+1. **User Authentication**: Implementing a secure and efficient user authentication system was crucial. We integrated OAuth for a streamlined login process.
+
+2. **Data Synchronization**: Ensuring real-time updates across the user interface when new donations were made required a robust backend setup. We utilized Socket.IO for live data synchronization.
+
+3. **Points System Logic**: Developing a fair and motivating points system involved complex logic. We crafted a balanced algorithm that encouraged continuous user engagement.
+
+4. **Responsive Design**: Creating a mobile-responsive design was essential for accessibility. We employed a mobile-first approach using CSS Flexbox and Grid.
+
+5. **Deployment Hurdles**: We faced challenges in deploying our full-stack application. By containerizing our app with Docker and hosting it on Heroku, we achieved a smooth deployment.
 
 ## License
 
-Copyright [2023] [name of copyright owner]
+Copyright [2023] [Farnaz Zinnah]
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-> http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+This project is licensed under the Apache License, Version 2.0. See the LICENSE file for details.
