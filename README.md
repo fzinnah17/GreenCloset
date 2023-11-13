@@ -32,9 +32,8 @@ The following **core** features were implemented in GreenCloset:
 ## Video Walkthrough
 
 Here's a brief overview of GreenCloset's functionality:
-
-![GreenCloset Walkthrough](link-to-your-walkthrough-video.gif)
-
+ <img src='https://github.com/fzinnah17/GreenCloset/blob/main/GreenClosetTogether-min.gif' title='Video Walkthrough' width='' alt='Express React' />
+ 
 GIF created with [LICEcap](http://www.cockos.com/licecap/)
 
 ## Challenges and Solutions:
